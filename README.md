@@ -1,4 +1,4 @@
-🌐 terraform-aws-http-server
+# 🌐 terraform-AWS_EC2-http-server
 Deploy an Apache HTTP web server on AWS EC2 using Terraform — automated from infrastructure provisioning to web page serving, using the AWS default VPC for simplicity and speed.
 
 Terraform AWS Apache Amazon Linux Region License
@@ -43,9 +43,9 @@ Minimum IAM Permissions
 }
 Configure AWS credentials
 aws configure
-# AWS Access Key ID:     <your-key>
+# AWS Access Key ID: <your-key>
 # AWS Secret Access Key: <your-secret>
-# Default region name:   ap-south-1
+# Default region name: ap-south-1
 # Default output format: json
 🚀 Quick Start
 1. Clone the repository
