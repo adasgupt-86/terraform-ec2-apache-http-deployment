@@ -30,7 +30,6 @@ data "aws_subnets" "default" {
 }
 
 # Get latest Amazon Linux 2023 AMI
-
 data "aws_ami" "amazon_linux" {
   most_recent = true
   owners      = ["amazon"]
@@ -125,6 +124,7 @@ resource "aws_instance" "web" {
 
 
 
+
 # terraform.tfvars
 
 key_name   = "my-AWS-key-pair"
@@ -214,3 +214,7 @@ cat > /etc/httpd/conf.d/ssl-vhost.conf <<'SSLCONF'
     RewriteEngine On
     RewriteRule ^(.*)$ https://%{HTTP_HOST}$1 [R=301,L]
 </VirtualHost>
+................
+.............
+........................
+......................
