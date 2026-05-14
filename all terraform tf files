@@ -1,4 +1,4 @@
-main.tf
+# main.tf file
 
 terraform {
   required_version = ">= 1.5"
@@ -125,14 +125,14 @@ resource "aws_instance" "web" {
 
 
 
-terraform.tfvars
+# terraform.tfvars
 
 key_name   = "my-AWS-key-pair"
 my_ip_cidr = "203.0.113.10/32"
 
 
 
-variables.tf
+# variables.tf
 
 variable "aws_region" {
   description = "AWS region"
@@ -163,7 +163,7 @@ variable "my_ip_cidr" {
 }
 
 
-output.tf
+# output.tfv
 
 output "instance_id" {
   value = aws_instance.web.id
@@ -183,7 +183,7 @@ output "application_url" {
 
 
 
-userdata.sh
+# userdata.sh
 
 #!/bin/bash
 set -eux
